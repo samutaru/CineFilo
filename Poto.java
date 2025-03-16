@@ -12,6 +12,7 @@ public class Poto<E>{
         size = 0;
     }
 
+    // SAMUEL GITANO Y GORDO
 
 
     private int increment(int x) {
