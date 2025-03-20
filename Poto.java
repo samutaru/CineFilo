@@ -1,7 +1,7 @@
 
     import java.util.*;
 
-/*** 1️⃣ SINGLETON - Gestión de Sesión ***/
+/*** SINGLETON - Gestión de Sesión ***/
 class UsuarioSesion {
     private static UsuarioSesion instancia;
     private String usuario;
@@ -26,7 +26,7 @@ class UsuarioSesion {
     }
 }
 
-/*** 2️⃣ FACTORY METHOD - Creación de Tickets ***/
+/*** FACTORY METHOD - Creación de Tickets ***/
 abstract class Ticket {
     protected double precio;
     abstract void mostrarDetalles();
@@ -49,7 +49,7 @@ class TicketFactory {
     }
 }
 
-/*** 3️⃣ OBSERVER - Notificaciones ***/
+/*** OBSERVER - Notificaciones ***/
 interface Observador {
     void notificar(String mensaje);
 }
@@ -74,7 +74,7 @@ class TicketNotifier {
     }
 }
 
-/*** 4️⃣ STRATEGY - Métodos de Pago ***/
+/*** STRATEGY - Métodos de Pago ***/
 interface MetodoPago {
     void pagar(double cantidad);
 }
@@ -97,7 +97,7 @@ class PasarelaPago {
     public void procesarPago(double cantidad) { metodo.pagar(cantidad); }
 }
 
-/*** 5️⃣ DECORATOR - Aplicación de Descuentos ***/
+/*** DECORATOR - Aplicación de Descuentos ***/
 interface TicketBase {
     double getPrecio();
 }
@@ -112,7 +112,7 @@ class DescuentoDecorator implements TicketBase {
     public double getPrecio() { return ticket.getPrecio() * 0.8; }
 }
 
-/*** 6️⃣ MEMENTO - Sistema de Valoraciones ***/
+/*** MEMENTO - Sistema de Valoraciones ***/
 class ValoracionMemento {
     private final String comentario;
     private final int puntuacion;
