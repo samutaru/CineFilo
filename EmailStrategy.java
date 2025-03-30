@@ -25,6 +25,6 @@ public class EmailStrategy implements NotificadorStrategy {
 
     @Override
     public void enviarNotificacion(String mensaje) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println(mensaje);
     }
 }

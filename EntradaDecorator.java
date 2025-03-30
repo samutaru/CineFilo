@@ -1,6 +1,6 @@
 package trabajois2;
 
-public class EntradaDecorator {
+public class EntradaDecorator extends Entrada{
      protected Entrada entrada;
     
     public EntradaDecorator(Entrada entrada) {

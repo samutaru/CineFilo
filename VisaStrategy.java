@@ -10,7 +10,7 @@ package trabajois2;
  */
 public class VisaStrategy implements CobroStrategy {
 
-    public VisaStrategy(float precio) {
+    public VisaStrategy() {
     }
 
     @Override

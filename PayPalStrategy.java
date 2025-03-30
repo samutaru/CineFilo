@@ -2,7 +2,7 @@ package trabajois2;
 
 public class PayPalStrategy implements CobroStrategy {
 
-    public PayPalStrategy(float precio) {
+    public PayPalStrategy() {
     }
 
     @Override

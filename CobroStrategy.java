@@ -4,10 +4,7 @@
  */
 package trabajois2;
 
-/**
- *
- * @author RAIDE
- */
+
 public interface CobroStrategy {
     void cobrar(double precio); //Patron estrategia se cobra la entrada a un usuario y cambia según se decida el metodo de pago
 }
