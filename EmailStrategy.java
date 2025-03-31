@@ -4,10 +4,6 @@
  */
 package trabajois2;
 
-/**
- *
- * @author RAIDE
- */
 public class EmailStrategy implements NotificadorStrategy {
     private String email;
 
@@ -25,6 +21,7 @@ public class EmailStrategy implements NotificadorStrategy {
 
     @Override
     public void enviarNotificacion(String mensaje) {
-        System.out.println(mensaje);
+        System.out.println("Enviando entrada por Email a " + getEmail());
+        System.out.println("Detalles de la entrada: \n" + mensaje);
     }
 }

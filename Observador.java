@@ -4,10 +4,7 @@
  */
 package trabajois2;
 
-/**
- *
- * @author RAIDE
- */
+
 public interface Observador {
      void update(Entrada e);
 }

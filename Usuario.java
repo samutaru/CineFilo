@@ -8,6 +8,8 @@ public class Usuario {
     private String email;
     private String tlf;
     private boolean esClienteFrecuente;
+
+
     private List<Entrada> historialCompras;
 
     public Usuario(String nombre, String email, String tlf) {
@@ -33,9 +35,21 @@ public class Usuario {
     public List<Entrada> getHistorialCompras() {
         return historialCompras;
     }
+        public boolean EsClienteFrecuente() {
+        return esClienteFrecuente;
+    }
+
+    public void setEsClienteFrecuente(boolean esClienteFrecuente) {
+        this.esClienteFrecuente = esClienteFrecuente;
+    }
 
     public void agregarCompra(Entrada e) {
         historialCompras.add(e);
+        // Comprobar si el usuario se convierte en cliente frecuente
+        if (historialCompras.size() >= 3) {
+            esClienteFrecuente = true;
+        }
+
         System.out.println("Entrada comprada: " + e.getClass().getSimpleName() + " por " + e.getPrecio() + "€");
     }
 

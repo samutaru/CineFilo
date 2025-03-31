@@ -6,7 +6,7 @@ public class CashStrategy implements CobroStrategy {
     }
 
     @Override
-     public void cobrar() {
+     public void cobrar(double precio) {
         System.out.println("Pago en efectivo: " + precio + "€");
     }
 

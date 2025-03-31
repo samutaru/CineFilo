@@ -2,6 +2,7 @@ package trabajois2;
 
 public class PayPalStrategy implements CobroStrategy {
 
+
     public PayPalStrategy() {
     }
 

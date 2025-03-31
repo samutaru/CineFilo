@@ -4,10 +4,7 @@
  */
 package trabajois2;
 
-/**
- *
- * @author RAIDE
- */
+
 interface Sujeto {
     void registerObserver (Observador o);
     void removeObserver(Observador o);
